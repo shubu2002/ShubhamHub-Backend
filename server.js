@@ -24,7 +24,7 @@ app.use("/api/data", serviceRoute);
 app.use(errorMiddleware);
 
 
-const PORT = process.env.PORT ||3000;
+const PORT = process.env.PORT || 3000;
 
 connectDb().then(() => {
     app.listen(PORT, () =>{

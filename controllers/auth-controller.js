@@ -22,7 +22,7 @@ const register = async (req, res) => {
 
         const { username, email, phone, password } = req.body;
 
-        const userExist = await User.findOne({ email: email })
+        const userExist = await User.findOne({ email: email });
         if (userExist) {
             return res.json({ message: "email already exist" });
         }
