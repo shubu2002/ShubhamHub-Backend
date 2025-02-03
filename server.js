@@ -9,7 +9,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 const cors = require("cors")
 
 const corsOption = {
-    origin : "http://localhost:5173",
+    origin : "https://shubhamhub-backend.onrender.com",
     methods : "GET,POST,PUT,PATCH,HEAD",
     credentials : true,
 }
